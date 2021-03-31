@@ -20,7 +20,7 @@ jobs:
       run: mvn clean compile test --file pom.xml
     - name: Submit results to Xray
       env:
-        JIRA_SERVER_URL: ${{ https://orbital.atlassian.net }}  
-        JIRA_USERNAME: ${{ steve.turner@gmx.de }}  
-        JIRA_PASSWORD: ${{ qLHTJ6HNASLha9b }}
+        JIRA_SERVER_URL: ${{https://orbital.atlassian.net}}  
+        JIRA_USERNAME: ${{steve.turner@gmx.de}}  
+        JIRA_PASSWORD: ${{qLHTJ6HNASLha9b}}
       run: 'curl -H "Content-Type: multipart/form-data" -u $JIRA_USERNAME:$JIRA_PASSWORD -F "file=@target/surefire-reports/TEST-com.xpand.java.CalcTest.xml" "$JIRA_SERVER_URL/rest/raven/1.0/import/execution/junit?projectKey=CALC"'
