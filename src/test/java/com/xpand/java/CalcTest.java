@@ -22,7 +22,7 @@ public class CalcTest {
 	@Test
     public void CanAddNumbers()
     {
-        assertThat(Calculator.Add(1, 1), is(2));
+        assertThat(Calculator.Add(1, 1), is(3));
         assertThat(Calculator.Add(-1, 1), is(0));
     }
 
