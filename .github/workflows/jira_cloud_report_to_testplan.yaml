@@ -32,5 +32,5 @@ jobs:
         password: ${{ secrets.client_secret }}
         testFormat: "junit"
         testPaths: "**/surefire-reports/*.xml"
-        projectKey: "CALC"
+        projectKey: "DO"
         testPlanKey: ${{ github.event.inputs.test_plan_key }}
