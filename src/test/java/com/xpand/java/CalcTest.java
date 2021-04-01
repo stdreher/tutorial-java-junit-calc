@@ -35,7 +35,7 @@ public class CalcTest {
     {
         assertThat(Calculator.Subtract(1, 1), is(0));
         assertThat(Calculator.Subtract(-1, -1), is(0));
-        assertThat(Calculator.Subtract(100, 5), is(95));
+        assertThat(Calculator.Subtract(100, 5), is(94));
     }
 
 
