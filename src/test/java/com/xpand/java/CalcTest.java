@@ -26,7 +26,7 @@ public class CalcTest {
     {
         assertThat(Calculator.Add(1, 1), is(2));
         assertThat(Calculator.Add(-1, 1), is(0));
-        assertThat(Calculator.Add(0.5, -0.5), is(1.0));
+        assertThat(Calculator.Add(0.5, -0.5), is(0.0));
     }
 
 
@@ -47,7 +47,7 @@ public class CalcTest {
         assertThat(Calculator.Multiply(100, 5), is(500));
     }
 
-
+    @Test
     public void CanDivide()
     {
         assertThat(Calculator.Divide(1, 1), is(1));
@@ -63,11 +63,19 @@ public class CalcTest {
     }
 
     @Test
-    public void CanExp()
+    public void CanSquare()
     {
         assertThat(Calculator.Square(2), is(4));
         assertThat(Calculator.Square(3), is(9));
         assertThat(Calculator.Square(4), is(15));
+    }
+
+    @Test
+    public void CanExp()
+    {
+        assertThat(Calculator.Square(2), is(4));
+        assertThat(Calculator.Square(3), is(9));
+        assertThat(Calculator.Square(4), is(16));
     }
 
 }
