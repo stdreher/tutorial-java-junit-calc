@@ -36,6 +36,7 @@ public class CalcTest {
         assertThat(Calculator.Subtract(1, 1), is(0));
         assertThat(Calculator.Subtract(-1, -1), is(0));
         assertThat(Calculator.Subtract(100, 5), is(94));
+        assertThat(Calculator.Subtract(10, 5), is(5));
     }
 
 
@@ -45,6 +46,7 @@ public class CalcTest {
         assertThat(Calculator.Multiply(1, 1), is(1));
         assertThat(Calculator.Multiply(-1, -1), is(1));
         assertThat(Calculator.Multiply(100, 5), is(500));
+        assertThat(Calculator.Multiply(3, 5), is(14));
     }
 
     @Test
@@ -78,4 +80,11 @@ public class CalcTest {
         assertThat(Calculator.Square(4), is(16));
     }
 
+    @Test
+    public void CanSquare2()
+    {
+        assertThat(Calculator.Square(2), is(4));
+        assertThat(Calculator.Square(3), is(9));
+        assertThat(Calculator.Square(4), is(16));
+    }
 }
