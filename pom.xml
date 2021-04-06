@@ -17,8 +17,8 @@
         <xray.username>steve.turner@gmx.de</xray.username>
         <xray.password>qLHTJ6HNASLha9b</xray.password>
         <xray.projectKey>DO</xray.projectKey>
-        <!-- <xray.testExecKey></xray.testExecKey> -->
-        <!-- <xray.testPlanKey>DO-22</xray.testPlanKey> -->
+        <xray.testExecKey>DO-43</xray.testExecKey>
+        <xray.testPlanKey>DO-22</xray.testPlanKey>
         <!-- <xray.testEnvironments></xray.testEnvironments> -->
         <!-- <xray.revision></xray.revision> -->
         <xray.surefire.location>${basedir}/target/surefire-reports</xray.surefire.location>

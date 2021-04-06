@@ -37,4 +37,11 @@ public static int Subtract(int num1, int num2 )
     }
     return num2 - num1;
     }
+
+// Exp fct.
+public static double Exponent(double a, int b)
+    {
+        return (int)Math.pow(a, b);
+    }
+
 }
