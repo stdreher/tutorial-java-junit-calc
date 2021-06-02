@@ -6,8 +6,7 @@ import org.junit.Test;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
-
-// import org.hamcrest.Matcher;
+import org.hamcrest.Matcher;
 
 public class CalcTest {
 
@@ -27,6 +26,7 @@ public class CalcTest {
         assertThat(Calculator.Add(1, 1), is(2));
         assertThat(Calculator.Add(-1, 1), is(0));
         assertThat(Calculator.Add(0.5, -0.5), is(0.0));
+        assertThat(Calculator.Add(0.22, -0.5), is(0.0));
     }
 
 
