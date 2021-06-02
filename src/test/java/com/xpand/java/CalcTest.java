@@ -48,8 +48,7 @@ public class CalcTest {
         assertThat(Calculator.Multiply(1, 1), is(1));
         assertThat(Calculator.Multiply(-1, -1), is(1));
         assertThat(Calculator.Multiply(100, 5), is(500));
-        // und ein Strukturfehler
-        assertThat(Calculator.Multiply3, 5), is(15));
+        assertThat(Calculator.Multiply(3, 5), is(15));
     }
 
     @Test
